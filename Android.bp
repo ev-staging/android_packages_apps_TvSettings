@@ -28,7 +28,7 @@ android_app {
             local_include_dirs: ["Settings/src"],
         },
     resource_dirs: ["Settings/res"],
-    defaults: ["SettingsLibDefaults"],
+    defaults: ["EVSettingsLibDefaults"],
     platform_apis: true,
     certificate: "platform",
     system_ext_specific: true,
@@ -53,6 +53,7 @@ android_app {
         "TwoPanelSettingsLib",
         "zxing-core-1.7",
         "TvSettingsAPI",
+        "com.evervolv.platform.internal",
     ],
 }
 
@@ -73,7 +74,7 @@ android_app {
         "Settings/res-twopanel",
     ],
     overrides: ["TvSettings"],
-    defaults: ["SettingsLibDefaults"],
+    defaults: ["EVSettingsLibDefaults"],
     platform_apis: true,
     certificate: "platform",
     system_ext_specific: true,
@@ -98,6 +99,7 @@ android_app {
         "TwoPanelSettingsLib",
         "zxing-core-1.7",
         "TvSettingsAPI",
+        "com.evervolv.platform.internal",
     ],
     jacoco: {
         include_filter: [
